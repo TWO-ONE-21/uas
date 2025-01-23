@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UAS - Ardo Rianda</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <button class="tema" onclick="toggleTheme()">Ganti Tema</button>
+    <header class="header">
+        <img src="/img/profile.jpg" class="pp"></div>
+        <h1>Ardo Rianda</h1>
+        <p>Program Studi Sistem Informasi</p>
+    </header>
+
+    <nav class="nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="/profile">Profile</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="container" id="about">
+            <div class="about">
+                <img class="about-img" src="/img/about-img.jpg">
+                <div class="about-content">
+                    <h2>About Me</h2>
+                    <p>Hai, terimakasih telah mengunjungi portofolio saya. Sedikit perkenalan, nama saya Ardo Rianda.
+                        Saya
+                        kelahiran Bukittinggi, Sumatera Barat. Saya menyukai bidang teknologi semenjak saya kecil ketika
+                        berumur sekitar 12 tahun. Saya waktu itu sangat suka mengoprek aplikasi/game yang berjalan pada
+                        HP java. Serta saya dulu juga sudah ngeblog di https://mywapblog.com (sekarang sudah tutup)</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container project" id="project">
+            <h2>Our Project</h2>
+            <div class="project-grid">
+                <div class="project-card" id="card1">
+                    <p>Mendesain dan mengimplementasikan sistem database untuk pengelolaan pengiriman barang, termasuk
+                        manajemen pengguna, pengirim, penerima, dan paket menggunakan MariaDB. Menerapkan query
+                        kompleks, fungsi agregasi, subquery, serta pemberian dan pencabutan hak akses untuk pengguna.
+                    </p>
+                </div>
+                <div class="project-card" id="card2">
+                    <p>Membuat aplikasi penghitung nilai mahasiswa sederhana, dan mencetak laporannya dengan format PDF.
+                        Serta menyimpan semua data di database</p>
+                </div>
+                <div class="project-card" id="card3">
+                    <p>Membuat aplikasi management kas kelas serbaguna, dengan menggunakan bahasa java. Dengan bantuan
+                        maven di netbeans. Serta menyimpannya di database.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="container contact-container">
+                <div class="contact-info">
+                    <h2>Contact Us</h2>
+                    <p>Jl. Imam Bonjol, Kisaran Timur, Kota Kisaran Timur, Asahan 21222</p>
+                    <p>Phone: 085668710086</p>
+                    <p>Mail: ardo@protonmail.com</p>
+                    <p>Blog: <a href="https://github.com/TWO-ONE-21" target="_blank">https://github.com/TWO-ONE-21</a>
+                    </p>
+                    <p>Blog: <a href="https://www.haxnesia.my.id" target="_blank">https://haxnesia.my.id</a></p>
+                </div>
+                <img class="map" src="/img/map.jpg">
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copyCopyright 2025 23220316 - Ardo Rianda - UAS</p>
+    </footer>
+
+    <script>
+        function toggleTheme() {
+            const body = document.documentElement;
+            if (body.getAttribute('data-theme') === 'dark') {
+                body.removeAttribute('data-theme');
+                localStorage.setItem('theme', 'light');
+            } else {
+                body.setAttribute('data-theme', 'dark');
+                localStorage.setItem('theme', 'dark');
+            }
+        }
+
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        }
+    </script>
+</body>
+
+</html>
