@@ -170,15 +170,15 @@ h2 {
 }
 
 #card1::before {
-    background-image: url('/img/bg-card1.jpg');
+    background-image: url('img/bg-card1.jpg');
 }
 
 #card2::before {
-    background-image: url('/img/bg-card2.jpg');
+    background-image: url('img/bg-card2.jpg');
 }
 
 #card3::before {
-    background-image: url('/img/bg-card3.jpg');
+    background-image: url('img/bg-card3.jpg');
 }
 
 .project-card p {
